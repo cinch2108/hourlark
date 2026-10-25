@@ -11,6 +11,8 @@ TEAM = [
     ("numora",     "Numora",     "https://cinch2108.github.io/numora/",     "30 calculators & a unit converter"),
     ("pixelsmith", "Pixelsmith", "https://cinch2108.github.io/pixelsmith/", "Compress, resize & convert images"),
     ("mintkit",    "Mintkit",    "https://cinch2108.github.io/mintkit/",    "QR codes, barcodes & passwords"),
+    ("tagloom",    "Tagloom",    "https://cinch2108.github.io/tagloom/",    "SEO tools: meta tags, sitemaps & schema"),
+    ("localforge", "LocalForge PDF", "https://cinch2108.github.io/",        "Merge, split, compress & sign PDFs"),
 ]
 def team_html():
     items = ''.join(f'<li><a href="{u}" rel="noopener">{n}</a><span>{d.replace("&", "&amp;")}</span></li>' for k, n, u, d in TEAM if k != SELF)
