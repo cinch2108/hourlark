@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; media-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer to Any Date: Days, Hours, Minutes, Seconds | Hourlark</title>
+<meta name="description" content="Count down to any date and time in any time zone. Live days, hours, minutes and seconds, one-click holidays like New Year and Christmas, and a shareable link.">
+<meta name="theme-color" content="#0b0b10">
+<link rel="canonical" href="https://cinch2108.github.io/hourlark/countdown/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%23ff5c9d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23fff' stroke-width='2.6'/%3E%3Cpath d='M16 10.5V16l3.6 2.4' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hourlark">
+<meta property="og:title" content="Countdown Timer to Any Date: Days, Hours, Minutes, Seconds | Hourlark">
+<meta property="og:description" content="Count down to any date and time in any time zone. Live days, hours, minutes and seconds, one-click holidays like New Year and Christmas, and a shareable link.">
+<meta property="og:url" content="https://cinch2108.github.io/hourlark/countdown/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Countdown Timer to Any Date: Days, Hours, Minutes, Seconds | Hourlark">
+<meta name="twitter:description" content="Count down to any date and time in any time zone. Live days, hours, minutes and seconds, one-click holidays like New Year and Christmas, and a shareable link.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Hourlark","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free online timer, stopwatch, Pomodoro timer, countdown to any date, world clock, time zone converter with meeting planner, and alarm clock."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does the countdown handle time zones and daylight saving time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The event time is set in the time zone you choose, and Hourlark uses your browser’s time zone database to work out the exact moment, including daylight saving changes. Viewers in other zones also see the time in their local time."}}, {"@type": "Question", "name": "Can I share my countdown?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Copy share link creates a URL with the event name, date, time and zone. Anyone who opens it sees the same live countdown. Nothing is stored on a server."}}, {"@type": "Question", "name": "What happens when the countdown reaches zero?", "acceptedAnswer": {"@type": "Answer", "text": "The card changes colour and the counter starts showing how long ago the event happened, so the page is still useful after the moment passes."}}, {"@type": "Question", "name": "Can I put the countdown on a TV or projector?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Press F or the Fullscreen button for a large, clean display, and tick Keep screen awake so the screen does not dim."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Hourlark", "item": "https://cinch2108.github.io/hourlark/"}, {"@type": "ListItem", "position": 2, "name": "Countdown Timer", "item": "https://cinch2108.github.io/hourlark/countdown/"}]}</script>
+</head>
+<body data-view="countdown" data-page="countdown">
+<a class="skip" href="#main">Skip to tool</a>
+<header><div class="nav">
+  <a class="logo" href="../" aria-label="Hourlark home"><i></i>Hourlark</a>
+  <nav class="tabs" id="tabs" aria-label="Tools"><a class="tab" data-p="timer" data-v="timer" data-name="Online Timer" href="../" title="Online Timer (Alt+1)">Timer</a><a class="tab" data-p="stopwatch" data-v="stopwatch" data-name="Online Stopwatch" href="../stopwatch/" title="Online Stopwatch (Alt+2)">Stopwatch</a><a class="tab" data-p="pomodoro" data-v="pomodoro" data-name="Pomodoro Timer" href="../pomodoro-timer/" title="Pomodoro Timer (Alt+3)">Pomodoro</a><a class="tab active" data-p="countdown" data-v="countdown" data-name="Countdown Timer" href="../countdown/" aria-current="page" title="Countdown Timer (Alt+4)">Countdown</a><a class="tab" data-p="worldclock" data-v="worldclock" data-name="World Clock" href="../world-clock/" title="World Clock (Alt+5)">World clock</a><a class="tab" data-p="converter" data-v="converter" data-name="Time Zone Converter" href="../time-zone-converter/" title="Time Zone Converter (Alt+6)">Time zones</a><a class="tab" data-p="alarm" data-v="alarm" data-name="Alarm Clock" href="../alarm-clock/" title="Alarm Clock (Alt+7)">Alarm</a></nav>
+</div></header>
+
+<main id="main">
+<section class="hero">
+  <h1>Countdown to <span>any date and time.</span></h1>
+  <p>Create a live countdown to a launch, trip, wedding, exam or holiday. Pick the date, time and time zone, then share a link so everyone counts down to the same moment.</p>
+  <div id="resume" class="resume" hidden></div>
+</section>
+<!-- AD SLOT: top leaderboard 970x90 (responsive). Paste ad unit inside. -->
+<div class="ad ad-leader" id="ad-top" data-ad-slot="top" aria-label="Advertisement"></div>
+<div class="layout"><div class="content">
+
+<!-- TIMER -->
+<section class="view" id="v-timer" aria-label="Online timer">
+  <div class="card">
+    <div class="row between"><h2 class="m0">Set a timer</h2><span class="hint">Runs on timestamps, so it stays exact in background tabs.</span></div>
+    <div class="chipbar mt2" id="tm-presets" role="group" aria-label="Quick presets">
+      <button class="btn" data-act="tm-preset" data-ms="30000">30 sec</button><button class="btn" data-act="tm-preset" data-ms="60000">1 min</button><button class="btn" data-act="tm-preset" data-ms="120000">2 min</button><button class="btn" data-act="tm-preset" data-ms="180000">3 min</button><button class="btn" data-act="tm-preset" data-ms="300000">5 min</button><button class="btn" data-act="tm-preset" data-ms="600000">10 min</button><button class="btn" data-act="tm-preset" data-ms="900000">15 min</button><button class="btn" data-act="tm-preset" data-ms="1200000">20 min</button><button class="btn" data-act="tm-preset" data-ms="1800000">30 min</button><button class="btn" data-act="tm-preset" data-ms="2700000">45 min</button><button class="btn" data-act="tm-preset" data-ms="3600000">1 hour</button><button class="btn" data-act="tm-preset" data-ms="5400000">90 min</button>
+    </div>
+    <div class="row mt timeset">
+      <label class="unit"><input type="number" id="tm-h" min="0" max="99" value="0" inputmode="numeric" aria-label="Hours"><span>h</span></label>
+      <label class="unit"><input type="number" id="tm-m" min="0" max="59" value="5" inputmode="numeric" aria-label="Minutes"><span>m</span></label>
+      <label class="unit"><input type="number" id="tm-s" min="0" max="59" value="0" inputmode="numeric" aria-label="Seconds"><span>s</span></label>
+      <input type="text" id="tm-label" maxlength="40" placeholder="Label (optional)" aria-label="Timer label" autocomplete="off">
+      <button class="btn primary" data-act="tm-add" id="tm-add">Start timer</button>
+    </div>
+    <div class="row mt2"><input type="text" id="tm-quick" maxlength="40" placeholder="Or type: 7m, 1h 30m, 90s, 2:30…" aria-label="Type a duration" autocomplete="off" class="grow"><span class="hint">Press <kbd>Enter</kbd> to start. Up to 12 timers at once.</span></div>
+  </div>
+  <div class="timers mt" id="tm-list" aria-live="off"></div>
+  <div class="card mt">
+    <h2>Sound &amp; alerts</h2>
+    <div class="row">
+      <label class="lbl-inline">Sound <select id="tm-sound" data-sound-select></select></label>
+      <label class="lbl-inline">Volume <input type="range" id="tm-vol" min="0" max="100" value="70" aria-label="Volume"></label>
+      <button class="btn sm" data-act="test-sound" data-sel="tm-sound" data-vol="tm-vol">▶ Test</button>
+      <label class="check"><input type="checkbox" id="tm-loop" checked> Ring until stopped (max 1 min)</label>
+    </div>
+    <div class="row mt2">
+      <label class="check"><input type="checkbox" data-wake> Keep screen awake</label>
+      <button class="btn sm" data-act="notify">🔔 Enable notifications</button><span class="pill" data-notify-status>Notifications off</span>
+      <span class="hint">Keys: <kbd>Space</kbd> start/pause · <kbd>R</kbd> reset · <kbd>F</kbd> fullscreen (first timer)</span>
+    </div>
+  </div>
+</section>
+
+<!-- STOPWATCH -->
+<section class="view" id="v-stopwatch" aria-label="Stopwatch">
+  <div class="card bigcard" id="sw-card">
+    <div class="sw-disp mono" id="sw-disp" aria-live="off">00:00.00</div>
+    <div class="sw-sub mono" id="sw-lapnow">Lap 1 · 00:00.00</div>
+    <div class="row center mt">
+      <button class="btn primary big" data-act="sw-toggle" id="sw-toggle">Start</button>
+      <button class="btn big" data-act="sw-lap" id="sw-lap" disabled>Lap</button>
+      <button class="btn big" data-act="sw-reset" id="sw-reset">Reset</button>
+      <button class="btn big" data-act="fs" data-target="sw-card" title="Fullscreen (F)">⛶</button>
+    </div>
+    <p class="hint center mt2">Keys: <kbd>Space</kbd> start/stop · <kbd>L</kbd> lap · <kbd>R</kbd> reset · <kbd>F</kbd> fullscreen</p>
+  </div>
+  <div class="card mt">
+    <div class="row between"><h2 class="m0">Laps</h2><div class="row tight"><button class="btn sm" data-act="sw-copy">Copy</button><button class="btn sm" data-act="sw-csv">⬇ Export CSV</button></div></div>
+    <div class="stats4 mt2"><div class="stat"><b id="sw-n">0</b><span>Laps</span></div><div class="stat"><b id="sw-fast" class="fast">–</b><span>Fastest</span></div><div class="stat"><b id="sw-slow" class="slow">–</b><span>Slowest</span></div><div class="stat"><b id="sw-avg">–</b><span>Average</span></div></div>
+    <div class="tablewrap mt2"><table class="laps"><thead><tr><th>Lap</th><th>Lap time</th><th>Split</th><th>vs average</th></tr></thead><tbody id="sw-laps"></tbody></table></div>
+    <p class="hint mt2" id="sw-empty">Press Lap (or <kbd>L</kbd>) while running to record splits. The fastest lap is green, the slowest red.</p>
+  </div>
+</section>
+
+<!-- POMODORO -->
+<section class="view" id="v-pomodoro" aria-label="Pomodoro timer">
+  <div class="split">
+    <div class="card bigcard" id="po-card">
+      <div class="seg" id="po-phase" role="group" aria-label="Session type"><button class="on" data-ph="work">Focus</button><button data-ph="short">Short break</button><button data-ph="long">Long break</button></div>
+      <div class="ring"><svg viewBox="0 0 220 220" aria-hidden="true"><defs><linearGradient id="po-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#ff5c9d"/></linearGradient></defs><circle class="ring-bg" cx="110" cy="110" r="100"/><circle class="ring-fg" id="po-arc" cx="110" cy="110" r="100"/></svg>
+        <div class="ring-in"><div class="mono po-time" id="po-time">25:00</div><div class="hint" id="po-label">Focus · session 1 of 4</div></div></div>
+      <div class="row center">
+        <button class="btn primary big" data-act="po-toggle" id="po-toggle">Start</button>
+        <button class="btn big" data-act="po-reset">Reset</button>
+        <button class="btn big" data-act="po-skip">Skip ⏭</button>
+        <button class="btn big" data-act="fs" data-target="po-card" title="Fullscreen">⛶</button>
+      </div>
+      <p class="hint center mt2" id="po-task-now">Pick a task on the right to track sessions per task.</p>
+    </div>
+    <div class="card">
+      <h2>Today</h2>
+      <div class="stats"><div class="stat hero-stat"><b id="po-today">0</b><span>Focus sessions</span></div><div class="stat"><b id="po-mins">0</b><span>Focus minutes</span></div></div>
+      <div class="week mt2" id="po-week" aria-label="Last 7 days"></div>
+      <h2 class="mt">Tasks</h2>
+      <div class="row tight"><input type="text" id="po-task-in" maxlength="120" placeholder="What are you working on?" aria-label="New task" class="grow" autocomplete="off"><button class="btn" data-act="po-task-add">Add</button></div>
+      <ul class="tasks mt2" id="po-tasks"></ul>
+    </div>
+  </div>
+  <div class="card mt">
+    <h2>Settings</h2>
+    <div class="setgrid">
+      <label><span class="lbl">Focus (min)</span><input type="number" id="po-work" min="1" max="180" value="25"></label>
+      <label><span class="lbl">Short break</span><input type="number" id="po-short" min="1" max="60" value="5"></label>
+      <label><span class="lbl">Long break</span><input type="number" id="po-long" min="1" max="120" value="15"></label>
+      <label><span class="lbl">Long break every</span><input type="number" id="po-every" min="1" max="12" value="4"></label>
+    </div>
+    <div class="row mt">
+      <label class="check"><input type="checkbox" id="po-auto-break" checked> Auto-start breaks</label>
+      <label class="check"><input type="checkbox" id="po-auto-work"> Auto-start focus</label>
+      <label class="lbl-inline">Sound <select id="po-sound" data-sound-select></select></label>
+      <label class="lbl-inline">Volume <input type="range" id="po-vol" min="0" max="100" value="70" aria-label="Volume"></label>
+      <button class="btn sm" data-act="test-sound" data-sel="po-sound" data-vol="po-vol">▶ Test</button>
+    </div>
+    <div class="row mt2"><label class="check"><input type="checkbox" data-wake> Keep screen awake</label><button class="btn sm" data-act="notify">🔔 Enable notifications</button><span class="pill" data-notify-status>Notifications off</span><span class="hint">Keys: <kbd>Space</kbd> start/pause · <kbd>S</kbd> skip · <kbd>R</kbd> reset</span></div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="view active" id="v-countdown" aria-label="Countdown to a date">
+  <div class="card bigcard cd" id="cd-card">
+    <div class="cd-title" id="cd-title">New Year</div>
+    <div class="cd-grid" aria-live="off"><div><b class="mono" id="cd-d">0</b><span>Days</span></div><div><b class="mono" id="cd-h">00</b><span>Hours</span></div><div><b class="mono" id="cd-m">00</b><span>Minutes</span></div><div><b class="mono" id="cd-s">00</b><span>Seconds</span></div></div>
+    <div class="hint center" id="cd-when"></div>
+    <div class="row center mt"><button class="btn primary" data-act="cd-share">🔗 Copy share link</button><button class="btn" data-act="fs" data-target="cd-card">⛶ Fullscreen</button><label class="check"><input type="checkbox" data-wake> Keep screen awake</label></div>
+  </div>
+  <div class="grid2 mt">
+    <div class="card">
+      <h2>Your event</h2>
+      <label class="lbl" for="cd-name">Event name</label><input type="text" id="cd-name" maxlength="80" placeholder="My birthday, launch day, vacation…" class="full" autocomplete="off">
+      <div class="row mt2">
+        <label><span class="lbl">Date</span><input type="date" id="cd-date" min="1900-01-01" max="2300-12-31"></label>
+        <label><span class="lbl">Time</span><input type="time" id="cd-time" value="00:00"></label>
+      </div>
+      <label class="lbl mt2" for="cd-zone">Time zone</label><select id="cd-zone" class="full" data-zone-select></select>
+      <p class="hint mt2" id="cd-note"></p>
+    </div>
+    <div class="card"><h2>Popular countdowns</h2><div class="chipbar" id="cd-presets"></div><p class="hint mt2">Dates are worked out live for the next occurrence, so Easter, Thanksgiving and Mother’s Day are always right.</p></div>
+  </div>
+</section>
+
+<!-- WORLD CLOCK -->
+<section class="view" id="v-worldclock" aria-label="World clock">
+  <div class="card">
+    <div class="row">
+      <div class="search grow"><input type="text" id="wc-q" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="wc-sug" maxlength="60" placeholder="Add a city, country or time zone (e.g. Tokyo, India, PST)…" autocomplete="off"><ul class="sug" id="wc-sug" role="listbox" hidden></ul></div>
+      <div class="seg" data-h12-toggle role="group" aria-label="Clock format"><button data-h12="1">12h</button><button data-h12="0">24h</button></div>
+      <div class="seg" id="wc-face" role="group" aria-label="Clock face"><button data-face="both">Both</button><button data-face="analog">Analog</button><button data-face="digital">Digital</button></div>
+    </div>
+  </div>
+  <div class="clocks mt" id="wc-list"></div>
+  <p class="hint mt2">☀ day · ◐ twilight · ☾ night, worked out from each city’s real sun position. Your clocks are saved in this browser.</p>
+</section>
+
+<!-- TIME ZONE CONVERTER -->
+<section class="view" id="v-converter" aria-label="Time zone converter and meeting planner">
+  <div class="card">
+    <div class="row">
+      <label><span class="lbl">Date &amp; time</span><input type="datetime-local" id="tz-dt"></label>
+      <label class="grow"><span class="lbl">In time zone</span><select id="tz-base" class="full" data-zone-select></select></label>
+      <button class="btn" data-act="tz-now">Now</button>
+      <div class="seg" data-h12-toggle role="group" aria-label="Clock format"><button data-h12="1">12h</button><button data-h12="0">24h</button></div>
+    </div>
+    <p class="hint mt2" id="tz-note"></p>
+    <div class="tzrows mt2" id="tz-rows"></div>
+    <div class="row mt2">
+      <div class="search grow"><input type="text" id="tz-q" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="tz-sug" maxlength="60" placeholder="Add a city or time zone to compare…" autocomplete="off"><ul class="sug" id="tz-sug" role="listbox" hidden></ul></div>
+      <button class="btn primary" data-act="tz-share">🔗 Copy share link</button>
+    </div>
+  </div>
+  <div class="card mt">
+    <div class="row between"><h2 class="m0">Meeting planner</h2>
+      <div class="row tight"><label class="lbl-inline">Working hours <select id="tz-ws" aria-label="Work day starts"></select></label><span class="hint">to</span><select id="tz-we" aria-label="Work day ends"></select></div></div>
+    <p class="hint mt2" id="tz-best"></p>
+    <div class="planner mt2" id="tz-plan"></div>
+    <p class="hint mt2"><span class="key w"></span> working hours <span class="key e"></span> early/evening <span class="key n"></span> night · Click an hour to pick it.</p>
+  </div>
+</section>
+
+<!-- ALARM -->
+<section class="view" id="v-alarm" aria-label="Alarm clock">
+  <div class="card bigcard" id="al-card">
+    <div class="row between"><div><div class="al-now mono" id="al-now">--:--:--</div><div class="hint" id="al-date"></div></div>
+      <div class="seg" data-h12-toggle role="group" aria-label="Clock format"><button data-h12="1">12h</button><button data-h12="0">24h</button></div></div>
+    <p class="note mt2">⚠ Keep this tab open, your computer awake and the volume up. Browsers can’t ring alarms from a closed tab. Alarms also ring while you use the other Hourlark tools.</p>
+  </div>
+  <div class="grid2 mt">
+    <div class="card">
+      <h2>New alarm</h2>
+      <div class="row"><label><span class="lbl">Time</span><input type="time" id="al-time" value="07:00"></label><label class="grow"><span class="lbl">Label</span><input type="text" id="al-label" maxlength="40" placeholder="Wake up" class="full" autocomplete="off"></label></div>
+      <span class="lbl mt2">Repeat (none = once)</span>
+      <div class="days" id="al-days" role="group" aria-label="Repeat days"><button data-d="1" aria-pressed="false">Mo</button><button data-d="2" aria-pressed="false">Tu</button><button data-d="3" aria-pressed="false">We</button><button data-d="4" aria-pressed="false">Th</button><button data-d="5" aria-pressed="false">Fr</button><button data-d="6" aria-pressed="false">Sa</button><button data-d="0" aria-pressed="false">Su</button></div>
+      <div class="row mt2">
+        <label class="lbl-inline">Sound <select id="al-sound" data-sound-select></select></label>
+        <label class="lbl-inline">Volume <input type="range" id="al-vol" min="0" max="100" value="80" aria-label="Volume"></label>
+        <label class="lbl-inline">Snooze <select id="al-snooze"><option value="5">5 min</option><option value="9" selected>9 min</option><option value="10">10 min</option><option value="15">15 min</option></select></label>
+      </div>
+      <div class="row mt">
+        <button class="btn primary" data-act="al-add">Add alarm</button>
+        <button class="btn" data-act="test-sound" data-sel="al-sound" data-vol="al-vol">▶ Preview sound</button>
+        <button class="btn" data-act="al-test" id="al-test">Test: ring in 5 s</button>
+      </div>
+      <div class="row mt2"><label class="check"><input type="checkbox" data-wake> Keep screen awake</label><button class="btn sm" data-act="notify">🔔 Enable notifications</button><span class="pill" data-notify-status>Notifications off</span></div>
+    </div>
+    <div class="card"><h2>Your alarms</h2><div class="alarms" id="al-list"></div><p class="hint" id="al-empty">No alarms yet.</p></div>
+  </div>
+</section>
+
+</div>
+<aside class="rail"><!-- AD SLOTS: sticky sidebar 300x250 x2 -->
+<div class="ad ad-rect" id="ad-side-1" data-ad-slot="side-1" aria-label="Advertisement"></div><div class="ad ad-rect" id="ad-side-2" data-ad-slot="side-2" aria-label="Advertisement"></div></aside>
+</div>
+<article class="seo">
+<h2>How to use the countdown timer</h2>
+<ol><li>Type a name for your event, such as “Launch day” or “Our trip”.</li><li>Pick the date and time. Choose the event’s time zone so the countdown is right for everyone, wherever they are.</li><li>Or click a preset such as New Year, Halloween, Thanksgiving or Christmas. Presets always pick the next upcoming date.</li><li>Watch the days, hours, minutes and seconds count down live. Press F or Fullscreen to show it on a big screen.</li><li>Click Copy share link and send it to friends. The link opens the same countdown on their device in their own browser.</li></ol>
+<h2>Frequently asked questions</h2>
+<details><summary>Does the countdown handle time zones and daylight saving time?</summary><p>Yes. The event time is set in the time zone you choose, and Hourlark uses your browser’s time zone database to work out the exact moment, including daylight saving changes. Viewers in other zones also see the time in their local time.</p></details><details><summary>Can I share my countdown?</summary><p>Yes. Copy share link creates a URL with the event name, date, time and zone. Anyone who opens it sees the same live countdown. Nothing is stored on a server.</p></details><details><summary>What happens when the countdown reaches zero?</summary><p>The card changes colour and the counter starts showing how long ago the event happened, so the page is still useful after the moment passes.</p></details><details><summary>Can I put the countdown on a TV or projector?</summary><p>Yes. Press F or the Fullscreen button for a large, clean display, and tick Keep screen awake so the screen does not dim.</p></details>
+<h2>More free time tools</h2>
+<div class="toollinks"><a href="../">Online Timer<span>Free online timer with presets, custom times, multiple timers, alarm sounds and fullscreen.</span></a><a href="../stopwatch/">Online Stopwatch<span>Free online stopwatch with lap and split times, fastest and slowest lap highlighting, keyboard shortcuts, fullscreen and CSV export.</span></a><a href="../pomodoro-timer/">Pomodoro Timer<span>Free Pomodoro timer with custom focus and break lengths, long breaks, auto-start, a task list, daily session stats, gentle sounds and optional notifications.</span></a><a href="../world-clock/">World Clock<span>See the current time in cities around the world on analog and digital clocks.</span></a><a href="../time-zone-converter/">Time Zone Converter<span>Convert any time between time zones with daylight saving handled automatically, and find meeting times with a working-hours overlap planner.</span></a><a href="../alarm-clock/">Alarm Clock<span>Free online alarm clock with multiple labelled alarms, repeat days, six built-in sounds, volume, snooze and a 5-second test so you know it will ring.</span></a></div>
+</article>
+<!-- AD SLOT: footer 728x90 -->
+<div class="ad ad-foot" id="ad-foot" data-ad-slot="foot" aria-label="Advertisement"></div>
+</main>
+<div class="ringer" id="ringer" role="alertdialog" aria-modal="true" aria-labelledby="rg-title" hidden>
+  <div class="ringbox"><div class="bell" aria-hidden="true">⏰</div><h2 id="rg-title">Time’s up</h2><p class="mono" id="rg-sub"></p><p class="hint" id="rg-more"></p>
+  <div class="row center mt"><button class="btn primary big" id="rg-stop">Stop</button><button class="btn big" id="rg-snooze" hidden>Snooze</button></div><p class="hint mt2"><kbd>Esc</kbd> stops the sound</p></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="consent" id="consent" role="dialog" aria-label="Cookie notice"><span>Hourlark uses ads to stay free. Your timers, alarms and settings stay on your device. <a href="../privacy.html">Privacy</a></span><button class="btn" id="c-no">Essential only</button><button class="btn primary" id="c-yes">OK</button></div>
+<footer><div class="footlinks"><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div><br>Hourlark · runs entirely in your browser · <kbd>Alt</kbd>+<kbd>1</kbd>–<kbd>7</kbd> switches tools</footer>
+
+<script src="../app.js" defer></script>
+</body>
+</html>

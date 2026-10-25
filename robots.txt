@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cinch2108.github.io/hourlark/sitemap.xml
