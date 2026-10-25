@@ -16,6 +16,8 @@ TEAM = [
     ("mediaforge", "Mediaforge", "https://cinch2108.github.io/mediaforge/", "Convert, compress & trim video and audio"),
     ("sheetwise",  "Sheetwise",  "https://cinch2108.github.io/datakit/",    "CSV & Excel tools: convert, clean & merge"),
     ("localforge", "LocalForge PDF", "https://cinch2108.github.io/",        "Merge, split, compress & sign PDFs"),
+    ("keywren",    "Keywren",    "https://cinch2108.github.io/keywren/",    "Typing, keyboard, mic, webcam & screen tests"),
+    ("studywren",  "Studywren",  "https://cinch2108.github.io/studywren/",  "Citations, flashcards & grade calculator"),
 ]
 def team_html():
     items = ''.join(f'<li><a href="{u}" rel="noopener">{n}</a><span>{d.replace("&", "&amp;")}</span></li>' for k, n, u, d in TEAM if k != SELF)
