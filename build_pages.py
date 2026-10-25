@@ -1,6 +1,26 @@
 # Generates one SEO page per tool from template.html. Run: python3 build_pages.py
 import re, json, os
 DOMAIN = "https://cinch2108.github.io/hourlark"
+SELF = "hourlark"
+# ---- "More free tools" team footer: edit this ONE list, then run `python3 build_pages.py`. ----
+# Applied to every generated page plus privacy.html, terms.html and 404.html. The current site is left out.
+TEAM = [
+    ("chroma",     "Chroma",     "https://cinch2108.github.io/chroma/",     "Color palettes, contrast checker & gradients"),
+    ("textforge",  "Textforge",  "https://cinch2108.github.io/textforge/",  "Word counter, JSON, Base64, diff & regex"),
+    ("hourlark",   "Hourlark",   "https://cinch2108.github.io/hourlark/",   "Timer, stopwatch, Pomodoro & world clock"),
+    ("numora",     "Numora",     "https://cinch2108.github.io/numora/",     "30 calculators & a unit converter"),
+    ("pixelsmith", "Pixelsmith", "https://cinch2108.github.io/pixelsmith/", "Compress, resize & convert images"),
+    ("mintkit",    "Mintkit",    "https://cinch2108.github.io/mintkit/",    "QR codes, barcodes & passwords"),
+]
+def team_html():
+    items = ''.join(f'<li><a href="{u}" rel="noopener">{n}</a><span>{d.replace("&", "&amp;")}</span></li>' for k, n, u, d in TEAM if k != SELF)
+    return f'<!--team--><nav class="more-tools" aria-label="More free tools"><h2>More free tools</h2><ul>{items}</ul></nav><!--/team-->'
+def add_team(s):
+    import re as _re
+    if '<!--team-->' in s: return _re.sub(r'<!--team-->.*?<!--/team-->', lambda m: team_html(), s, flags=_re.S)
+    if '<footer>' in s: return s.replace('<footer>', '<footer>' + team_html(), 1)
+    return s.replace('</main>', '</main><footer>' + team_html() + '</footer>', 1)
+
 BRAND = "Hourlark"
 T = open('template.html', encoding='utf-8').read()
 PAGES = [
@@ -146,9 +166,15 @@ for p in PAGES:
     s = s.replace('</head>', f'<script type="application/ld+json">{ld(faq)}</script>\n<script type="application/ld+json">{ld(crumbs)}</script>\n</head>', 1)
     out = (p['slug'] + '/index.html') if p['slug'] else 'index.html'
     os.makedirs(os.path.dirname(out) or '.', exist_ok=True)
+    s = add_team(s)
     open(out, 'w', encoding='utf-8').write(s)
 
 open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + ''.join(f'  <url><loc>{page_url(p)}</loc><lastmod>2026-10-25</lastmod></url>\n' for p in PAGES)
     + f'  <url><loc>{DOMAIN}/privacy.html</loc></url>\n  <url><loc>{DOMAIN}/terms.html</loc></url>\n</urlset>\n')
 print('built', len(PAGES), 'pages')
+
+# team footer on the static pages
+for _f in ['privacy.html', 'terms.html', '404.html']:
+    _s = open(_f, encoding='utf-8').read()
+    open(_f, 'w', encoding='utf-8').write(add_team(_s))
